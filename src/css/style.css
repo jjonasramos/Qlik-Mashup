@@ -103,11 +103,11 @@ main {
 }
 
 #wrapper {
-    flex: 1;
+    /* flex: 1; */
     color: grey;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 /* TOP BAR */
@@ -140,4 +140,8 @@ main {
 
 #wrapper > #content {
     border-top: 5px solid #f6f6f6;
+    height: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: green red;
 }
