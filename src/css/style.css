@@ -8,8 +8,8 @@ body {
     background: #f6f6f6;
 }
 
-body > * {
-    height: 100vh; 
+body>* {
+    height: 100vh;
 }
 
 main {
@@ -30,14 +30,12 @@ aside {
     color: grey;
 }
 
-aside > #logo {
+aside>#logo {
     padding: 20px;
     margin-top: 15px;
 }
 
-aside > #logo > a > img {
-    /* height: 20%;
-    width: auto; */
+aside>#logo>a>img {
     height: 40px;
 }
 
@@ -48,7 +46,7 @@ aside h5 {
     color: #999;
 }
 
-aside > ul{
+aside>ul {
     padding-inline-start: 0px;
 }
 
@@ -57,7 +55,7 @@ aside ul li:hover {
     padding-left: 40px;
 }
 
-aside > ul > li{
+aside>ul>li {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -66,12 +64,12 @@ aside > ul > li{
     transition: 0.15s all ease;
 }
 
-aside > ul > li > i {
+aside>ul>li>i {
     font-size: 1.7rem;
     color: #A0AC2D;
 }
 
-aside > ul > li > span {
+aside>ul>li>span {
     padding-left: 10px;
 }
 
@@ -93,7 +91,8 @@ aside > ul > li > span {
     padding-top: 40px;
 }
 
-/* MAIN */
+
+/* ================ MAIN ================ */
 
 main {
     width: 100%;
@@ -110,7 +109,13 @@ main {
     overflow-y: hidden;
 }
 
-/* TOP BAR */
+#content {
+    padding: 20px;
+}
+
+
+/* ================ TOP BAR ================ */
+
 #topBar {
     width: 100%;
     height: 60px;
@@ -118,30 +123,57 @@ main {
     align-items: center;
 }
 
-#topBar span {
+#topBar>.título {
     padding-left: 20px;
+    /* padding-right: 15px; */
     font-size: 2.5rem;
+    color: inherit;
 }
 
-#topBar > #menu {
-    height: 100%;
+#topBar>span {
+    padding-left: 15px;
+    font-size: 2rem;
+    color: #A0AC2D;
+}
+
+#topBar>#menu {
     padding-left: 20px;
     padding-right: 20px;
-    border-right: 5px solid #f6f6f6;
-    
+    border-right: 1px solid #ccc;
+    cursor: pointer;
 }
 
-#topBar > #menu > div {
-    width: 35px;
-    height: 5px;
-    background-color: #A0AC2D;
-    margin: 6px 0;
+#topBar>#menu>i {
+    font-size: 4rem;
+    transition: 0.15s all ease;
 }
 
-#wrapper > #content {
+#topBar>#menu>i:hover {
+    transform: rotate(90deg);
+}
+
+#wrapper>#content {
     border-top: 5px solid #f6f6f6;
     height: inherit;
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: green red;
+}
+
+
+/* ================ SCROLLBAR CUSTOM ================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(200, 200, 200, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
