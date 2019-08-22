@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    background: #f6f6f6;
+}
+
+body > * {
+    height: 100vh; 
+}
+
+main {
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 5px;
+}
+
+aside {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    max-width: 350px;
+    box-sizing: border-box;
+    color: grey;
+}
+
+aside > #logo {
+    padding: 20px;
+    margin-top: 15px;
+}
+
+aside > #logo > a > img {
+    /* height: 20%;
+    width: auto; */
+    height: 40px;
+}
+
+aside h5 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #999;
+}
+
+aside > ul{
+    padding-inline-start: 0px;
+}
+
+aside ul li:hover {
+    background: #f6f6f6;
+    padding-left: 40px;
+}
+
+aside > ul > li{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.15s all ease;
+}
+
+aside > ul > li > i {
+    font-size: 1.7rem;
+    color: #A0AC2D;
+}
+
+aside > ul > li > span {
+    padding-left: 10px;
+}
+
+#selo-qlik-partner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#selo-qlik-partner img {
+    vertical-align: bottom;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    flex: 1;
+    color: grey;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* TOP BAR */
+#topBar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#topBar span {
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
+
+#topBar > #menu {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 5px solid #f6f6f6;
+    
+}
+
+#topBar > #menu > div {
+    width: 35px;
+    height: 5px;
+    background-color: #A0AC2D;
+    margin: 6px 0;
+}
+
+#wrapper > #content {
+    border-top: 5px solid #f6f6f6;
+}
