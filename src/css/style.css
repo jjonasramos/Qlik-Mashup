@@ -17,6 +17,7 @@ main {
     height: 100vh;
     width: 100vw;
     margin-left: 5px;
+    z-index: 10;
 }
 
 aside {
@@ -24,26 +25,31 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    width: 200px;
     height: 100vh;
     max-width: 350px;
     box-sizing: border-box;
     color: grey;
+    transition: all 0.45s ease-in-out;
 }
 
 aside>#logo {
     padding: 20px;
     margin-top: 15px;
-}
 
-aside>#logo>a>img {
-    height: 40px;
+    width: 48px;
+    height: 48px;
+
+    background-image: url(../img/logo_colapsed.png);
+    background-size: 100%;
 }
 
 aside h5 {
-    padding-left: 20px;
-    padding-top: 20px;
+    margin-top: 20px;
     font-weight: bold;
     color: #999;
+    width: 65%;
 }
 
 aside>ul {
@@ -58,7 +64,7 @@ aside ul li:hover {
 aside>ul>li {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 1.5rem;
     cursor: pointer;
     transition: 0.15s all ease;
@@ -90,7 +96,6 @@ aside>ul>li>span {
     padding-bottom: 40px;
     padding-top: 40px;
 }
-
 
 /* ================ MAIN ================ */
 
@@ -126,7 +131,7 @@ main {
 #topBar>.título {
     padding-left: 20px;
     /* padding-right: 15px; */
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: inherit;
 }
 
@@ -146,10 +151,6 @@ main {
 #topBar>#menu>i {
     font-size: 4rem;
     transition: 0.15s all ease;
-}
-
-#topBar>#menu>i:hover {
-    transform: rotate(90deg);
 }
 
 #wrapper>#content {
