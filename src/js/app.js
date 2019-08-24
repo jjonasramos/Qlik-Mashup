@@ -26,5 +26,21 @@ $(document).ready(function() {
 			$('aside>h5').css('visibility', 'visible');
 		}
 	});
+
+	$("#botaoLogin").click(function() {
+		var load = $('.lds-hourglass').css('display');
+
+		if(load === 'none') {
+			$('.lds-hourglass').css('display', 'flex');
+			$('#botaoLogin span').css('display', 'none');
+			$('#botaoLogin').css('width', '40px');
+		} else {
+			$('.lds-hourglass').css('display', 'none');
+			$('#botaoLogin span').css('display', 'flex');
+			$('#botaoLogin').css('width', 'auto');
+			$('#botaoLogin').css('width', '100%');
+		}
+
+	});
 });
 
