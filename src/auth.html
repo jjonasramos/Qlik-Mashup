@@ -15,7 +15,7 @@
 <body>
     <main>
         <div id="login">
-            <form action="" method="post">
+            <form action="/test" method="post">
                 <div class="container">
                     <div id="logo">
                         <div class="logo-into">
@@ -34,10 +34,9 @@
                         <label for="password"><b>Password</b></label>
                     </span>
 
-                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <input type="password" placeholder="Enter Password" name="password" required oninvalid="this.setCustomValidity('Enter a valid password')">
                     
                     <button id="botaoLogin" type="submit">
-                        <!-- <img src="https://www.wpfaster.org/wp-content/uploads/2013/06/circle-loading-gif.gif" alt=""> -->
                         <div class="lds-hourglass"></div>
                         <span>LOGIN</span>
                     </button>    
